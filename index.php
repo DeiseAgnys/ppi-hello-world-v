@@ -7,7 +7,12 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Feliz ano novoo!!</h1>
+    <h1>App da Deise!</h1>
+    <?php
+    require_once "model/Conexao.php";
+    $tecnologias = Conexao::select("tecnologia", "id, nome");
+    print_r($tecnologias);
+    ?>
     
 </body>
 </html>
